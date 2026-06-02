@@ -12,3 +12,11 @@ jobs:
     steps:
       - name: mostrar mi saludo
         run: echo "Hola desde mi repositorio."
+
+      - name: mostra mi perfil
+        run: | 
+          echo "author: ${{ github.actor }}"
+          echo "evento: ${{ github.event_name }}"
+          echo "repositorio: ${{ github.repository }}"
+          echo "ref: ${{ github.ref_name }}"
+          
