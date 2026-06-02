@@ -1,0 +1,14 @@
+name: test_actions
+
+on:
+  push:
+    branches:
+      - main
+      - develop
+
+jobs:
+  messages:
+    runs-on: ubuntu-24.04
+    steps:
+      - name: say
+        run: echo "hello from github action in test_actions"
