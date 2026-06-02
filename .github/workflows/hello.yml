@@ -1,0 +1,14 @@
+name: saludo
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  saludar-dark-job:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: mostrar mi saludo
+        run: echo "Hola desde mi repositorio."
